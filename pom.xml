@@ -92,6 +92,17 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.7.v20180619</version>
+                <configuration>
+                    <scanInteralSeconds>10</scanInteralSeconds>
+                    <webAppConfig>
+                        <contextPath>/c</contextPath><!--添加为项目名称即可-->
+                    </webAppConfig>
+                </configuration>
+            </plugin>
         </plugins>
         <resources>
             <resource>
